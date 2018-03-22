@@ -3,6 +3,7 @@
  */
 
 window.Echo = (function (window, document, undefined) {
+
     'use strict';
 
     var store = [],
