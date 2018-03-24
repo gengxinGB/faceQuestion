@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callBack</title>
+    <script type="text/javascript">
+        function animationId(elementId) {
+            let elem=document.getElementById(elementId);
+            let tick=0;
+            let timer=setInterval(function () {
+                if(tick<100){
+                    elem.style.color='red';
+                    tick++;
+                }else {
+                    clearInterval(timer);
+                }
+            },10);
+        }
+        animationId('box');
+    </script>
+</head>
+<body>
+
+<div id="box">你好呀</div>
+</body>
+</html>

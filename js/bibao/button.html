@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button</title>
+    <script type="text/javascript">
+
+        function bind(content,name) {
+            return function () {
+                return content[name].apply(content,arguments);
+            }
+        }
+
+        let button={
+            clicked:false,
+            click:function () {
+                this.clicked=true;
+            }
+        };
+
+        let element=document.getElementById("test");
+        element.addEventListener("click",bind(button,"click"),false);
+    </script>
+</head>
+<body>
+<button id="test">Click me</button>
+</body>
+</html>

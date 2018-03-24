@@ -12,7 +12,7 @@ window.Echo = (function (window, document, undefined) {
         poll;
 
     var _inView = function (el) {
-        var coords = el.getBoundingClientRect();
+        var coords = el.getBoundingClientRect();//返回一个描述边框的一组数组对象，分别是left、top、right、bottom，相对于视口的左上角位置而言的
         return ((coords.top >= 0 && coords.left >= 0 && coords.top) <= (window.innerHeight || document.documentElement.clientHeight) + parseInt(offset));
     };
 
