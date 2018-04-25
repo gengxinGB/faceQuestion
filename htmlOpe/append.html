@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>json的序列化</title>
+</head>
+<body>
+<div id="inne"></div>
+</body>
+<script type="text/javascript">
+    let obj = {
+        name: "weiqiujuan",
+        sex: "girl",
+        age: 20,
+        grade: 1502
+    };
+    let result = JSON.stringify(obj);
+    //  alert(result);
+    let doc = document.getElementById("inne");
+    doc.append(result);
+</script>
+</html>
