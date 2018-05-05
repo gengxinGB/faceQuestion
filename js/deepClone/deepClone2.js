@@ -25,7 +25,7 @@ let testObj = {
     age: 22,
     favorite: "play",
     family: {brother: "son", mother: "haha", father: "heihei"}
-}
+};
 let testRes2 = deepClone(testObj);
 testRes2.family.brother = "weibo";
 console.log(testRes2);
